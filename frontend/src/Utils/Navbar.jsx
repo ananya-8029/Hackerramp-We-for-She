@@ -5,7 +5,7 @@ const Navbar = () => {
       <div className="w-full fixed h-[6vmax]">
         <div
           className="flex justify-center gap-[3vmax] items-center w-full h-full bg-[#FFFFFF] text-[
-#282C3F] font-font1 text-[14px] font-bold"
+#282C3F] font-font1 text-[14px] font-bold shadow-[2px_4px_9px_0_#d8d8d88a]"
         >
           <img src="../assets/images/myntralogo.png" alt="not available" className="h-[50%]" />
           <div className="flex gap-[3vmax]">
