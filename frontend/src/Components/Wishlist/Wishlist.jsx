@@ -1,7 +1,13 @@
+import Navbar from "../../Utils/Navbar";
+import UserNotLoggedIn from "../../Utils/UserNotLoggedIn";
+
 const Wishlist = () => {
   return (
     <>
-      <h1>This is your wishlist</h1>
+      <div className="h-screen w-full">
+        <Navbar />
+        <UserNotLoggedIn />
+      </div>
     </>
   );
 };

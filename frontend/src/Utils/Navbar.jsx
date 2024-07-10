@@ -1,4 +1,5 @@
 import { profileIcon, shoppingBagIcon, wishlistIcon } from "./Icons";
+import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <>
@@ -46,10 +47,13 @@ const Navbar = () => {
               {profileIcon}
               <h1>Profile</h1>
             </div>
-            <div className="flex flex-col justify-center items-center cursor-pointer hover:scale-[0.9] transition-all hover:transition-all ">
+            <Link
+              to="/wishlist"
+              className="flex flex-col justify-center items-center cursor-pointer hover:scale-[0.9] transition-all hover:transition-all "
+            >
               {wishlistIcon}
               <h1>Wishlist</h1>
-            </div>
+            </Link>
             <div className="flex flex-col justify-center items-center">
               {shoppingBagIcon}
               <h1>Bag</h1>
