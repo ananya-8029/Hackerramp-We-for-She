@@ -2,7 +2,7 @@ import { profileIcon, shoppingBagIcon, wishlistIcon } from "./Icons";
 const Navbar = () => {
   return (
     <>
-      <div className="w-full h-[6vmax]">
+      <div className="w-full fixed h-[6vmax]">
         <div
           className="flex justify-center gap-[3vmax] items-center w-full h-full bg-[#FFFFFF] text-[
 #282C3F] font-font1 text-[14px] font-bold"
