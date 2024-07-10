@@ -1,3 +1,12 @@
+const dotenv = require('dotenv').config({path : `${__dirname}/../.env`});
+
+const mongoose = require('mongoose');
+const { MongoClient, ServerApiVersion } = require('mongodb');
+//const { resolve } = require('promise');
+
+const client = new MongoClient(process.env.DATABASE_URL, {
+    useNewUrlParser: true, useUnifiedTopology: true 
+});
 const products = {
   12345: {
     id: "12345",
@@ -26,29 +35,28 @@ const ootds = [
   },
   // Add more OOTD posts as needed
 ];
-//this function will help us to find the  product mentioned in the ootd!
+//this function will help us to find the product mentioned in the ootd!
 //we will search in product db through product id which will be  unique for each product and then return it accordingly!
 //works to do connect product DB and then implement the logic!
 //we can use same function for the shoppable post also
 const getProductById=async()=>{
 // console.log(body);
 console.log("I m providing the body!");
-return("I m providing the body!");
-//   try{
-//       await client.connect()
-//       const db = client.db("bloodbank");
-//       const coll = db.collection("bloodbank");
-//       const data = await coll.find().toArray()
-//       console.log(data)
-//       return data
-//   }
-//   catch(err){
-//       console.log("Error occurred")
-//       return err;
-//   }
-//   finally{
-//       await client.close()
-//   } 
+  try{
+      await client.connect()
+      const db = client.db("mytraProduct");
+      const coll = db.collection("myntraProduct");
+      const data = await coll.find().toArray()
+      console.log(data)
+      return data
+  }
+  catch(err){
+      console.log("Error occurred")
+      return err;
+  }
+  finally{
+      await client.close()
+  } 
   };
 module.exports={
       getProductById
