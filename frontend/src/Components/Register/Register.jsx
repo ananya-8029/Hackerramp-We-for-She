@@ -1,10 +1,11 @@
 import { useState } from "react";
 import Navbar from "../../Utils/Navbar";
 import { Link } from "react-router-dom";
-import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import axios from "axios";
 
-const Login = () => {
+const Register = () => {
+  const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
@@ -13,22 +14,15 @@ const Login = () => {
     try {
       e.preventDefault();
       const response = await axios.post(
-        "http://localhost:5000/api/auth/login",
-        { email, password }
+        "http://localhost:5000/api/auth/register",
+        { username, email, password }
       );
       if (response.statusText === "OK") {
-        const { authToken, user } = response.data;
-        console.log(user);
-        const expirationTime = new Date().getTime() + 60 * 60 * 1000; // 1 hour in milliseconds
-
-        localStorage.setItem("authToken", authToken);
-        localStorage.setItem("authTokenExpiration", expirationTime);
-
-        axios.defaults.headers.common["auth-token"] = authToken;
+        setUsername("");
+        setEmail("");
+        setPassword("");
+        navigate("/login");
       }
-      setEmail("");
-      setPassword("");
-      navigate("/wishlist");
     } catch (error) {
       console.log(error);
     }
@@ -45,12 +39,21 @@ const Login = () => {
           />
           <div className="h-60% w-full bg-white p-[2vmax]">
             <h1 className="font-bold text-[20px] my-[1vmax]">
-              Login <span className="font-normal">or</span> Sign up
+              Register <span className="font-normal">or</span> Sign in
             </h1>
             <form
               action=""
               className="flex justify-start items-center flex-col gap-[1vmax]"
             >
+              <input
+                type="text"
+                placeholder="Username"
+                required
+                onChange={(e) => {
+                  setUsername(e.target.value);
+                }}
+                className="border-[1px] w-full p-[0.5vmax] focus:outline-none"
+              />
               <input
                 type="text"
                 placeholder="Email"
@@ -76,14 +79,14 @@ const Login = () => {
                 onClick={handleSubmit}
                 className="text-[#fff] border-2 rounded-sm py-[0.5vmax] px-[3vmax] text-[15px] font-semibold bg-[#FF3F6C] w-full my-[1vmax]"
               >
-                LOGIN
+                REGISTER
               </button>
             </div>
 
             <div className="flex justify-center items-center gap-2">
-              <p className="font-medium">Create an account!</p>
+              <p className="font-medium">Already have an account!</p>
               <Link to="/register" className="text-[#FF3F6C] cursor-pointer">
-                Register
+                Login
               </Link>
             </div>
           </div>
@@ -93,4 +96,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Register;
