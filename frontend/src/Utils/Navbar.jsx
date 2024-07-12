@@ -15,7 +15,7 @@ const Navbar = () => {
   const profilePath = userData ? `/profile/${userId}` : "/profile";
   return (
     <>
-      <div className="w-full fixed h-[6vmax]">
+      <div className="w-full z-[99999] fixed h-[6vmax]">
         <div
           className="flex justify-center gap-[3vmax] items-center w-full h-full bg-[#FFFFFF] text-[
 #282C3F] font-font1 text-[14px] font-bold shadow-[2px_4px_9px_0_#d8d8d88a] px-[1vmax]"

@@ -1,0 +1,22 @@
+.scroller {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    scrollbar-width: none;
+  }
+  
+  .scroller-item {
+    height: 100vh;
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #f0f0f0;
+    margin: 1rem 0;
+  }
+  
+  .scroller-item h2, .scroller-item p {
+    margin: 0.5rem 0;
+  }
+  

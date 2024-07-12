@@ -24,8 +24,14 @@ function App() {
           <Route path="/fashionmoments" element={<Moments />} />
           <Route path="/profile/:id" element={<Profile />} />
           <Route path="/profile" element={<Profile />} />
-          <Route path="/profile/followersandfollowing" element={<Community/>} />
-          <Route path="/profile/:id/followersandfollowing" element={<Community/>} />
+          <Route
+            path="/profile/followersandfollowing"
+            element={<Community />}
+          />
+          <Route
+            path="/profile/:id/followersandfollowing"
+            element={<Community />}
+          />
         </Routes>
       </BrowserRouter>
     </>

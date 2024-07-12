@@ -15,6 +15,7 @@ const Port = process.env.PORT || 5000;
 // Routes
 app.use("/api/auth", require("./routes/auth"));
 app.use("/api/wishlists", require("./routes/wishlists"))
+app.use("/api/moments",require("./routes/reels"))
 
 const listener = app.listen(Port, async () => {
   await connectToMongo();

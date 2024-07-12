@@ -14,6 +14,6 @@ router.post("/login", authController.login);
 router.get("/getUser",fetchuser, authController.getUser);
 
 // Route 4: api/auth/getUser/:id
-router.get("/getUser/:id",fetchuser, authController.getUserByid);
+router.get("/getUser/:id", authController.getUserByid);
 
 module.exports = router;

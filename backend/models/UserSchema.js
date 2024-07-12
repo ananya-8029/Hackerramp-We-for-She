@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
 const { Schema } = mongoose;
+const ReelSchema = require("./ReelsSchema");
 
 const UserSchema = new Schema(
   {
@@ -30,6 +31,18 @@ const UserSchema = new Schema(
         ref: "User",
       },
     ],
+    moments: [
+      {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "Reel",
+      },
+    ],
+    posts:[
+      {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "Product",
+      }
+    ]
   },
   { timestamps: true }
 );
