@@ -1,3 +1,4 @@
+import { useSelector } from "react-redux";
 import {
   fashionMomentsIcon,
   postIcon,
@@ -8,6 +9,10 @@ import {
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
+  const userData = useSelector((state) => state.userReducer.user);
+  const userId = userData ? userData._id : null;
+
+  const profilePath = userData ? `/profile/${userId}` : "/profile";
   return (
     <>
       <div className="w-full fixed h-[6vmax]">
@@ -80,10 +85,13 @@ const Navbar = () => {
                 </span>
               </Link>
             </div>
-            <div className="flex flex-col justify-center items-center">
+            <Link
+              to={profilePath}
+              className="flex flex-col justify-center items-center cursor-pointer hover:scale-[0.9] transition-all hover:transition-all"
+            >
               {profileIcon}
               <h1>Profile</h1>
-            </div>
+            </Link>
             <Link
               to="/wishlist"
               className="flex flex-col justify-center items-center cursor-pointer hover:scale-[0.9] transition-all hover:transition-all "

@@ -42,8 +42,7 @@ exports.register = async (req, res) => {
       const securedPassword = await bcrypt.hash(password, salt);
 
       const newUser = await UserSchema.create({
-        username: username,
-        email: email,
+        ...req.body,
         password: securedPassword,
       });
 
@@ -61,6 +60,16 @@ exports.register = async (req, res) => {
 exports.getUser = async (req, res) => {
   try {
     const user = await UserSchema.findById(req.user.id);
+    res.status(200).json({ user: user });
+  } catch (error) {
+    res.status(500).json({ message: "Not a valid user! " });
+  }
+};
+
+exports.getUserByid = async (req, res) => {
+  try {
+    const { id } = req.params;
+    const user = await UserSchema.findById(id);
     res.status(200).json({ user: user });
   } catch (error) {
     res.status(500).json({ message: "Not a valid user! " });

@@ -28,7 +28,7 @@ const Login = () => {
       }
       setEmail("");
       setPassword("");
-      navigate("/wishlist");
+      navigate("/");
     } catch (error) {
       console.log(error);
     }

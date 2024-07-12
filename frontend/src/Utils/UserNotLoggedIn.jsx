@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 import { errorNotLoggedInIcon } from "./Icons";
 
-const UserNotLoggedIn = () => {
+// eslint-disable-next-line react/prop-types
+const UserNotLoggedIn = ({iconName}) => {
   return (
     <>
       <div className="h-full w-full flex justify-center items-center">
@@ -10,7 +11,7 @@ const UserNotLoggedIn = () => {
             PLEASE LOG IN
           </h1>
           <p className="text-[18px] text-[#CED0D3]">
-            Login to view items in your wishlist.
+            {iconName === "wishlist" ? "Login to view items in your wishlist." : "Login to view your profile."}
           </p>
           {errorNotLoggedInIcon}
           <Link to="/login">

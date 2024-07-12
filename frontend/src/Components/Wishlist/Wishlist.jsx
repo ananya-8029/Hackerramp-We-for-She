@@ -50,7 +50,7 @@ const Wishlist = () => {
                 <h1 className="font-font1 font-bold text-[1.2vmax]">
                   My WishList &nbsp;
                   <span className="font-normal">
-                    {allItems && allItems.items.length} items
+                    {allItems ? allItems.items.length : 0} items
                   </span>
                 </h1>
                 <div
@@ -95,7 +95,7 @@ const Wishlist = () => {
             </div>
           </div>
         ) : (
-          <UserNotLoggedIn />
+          <UserNotLoggedIn iconName="wishlist" />
         )}
         <Footer />
       </div>

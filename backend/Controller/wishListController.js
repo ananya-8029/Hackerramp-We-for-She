@@ -23,7 +23,11 @@ exports.createWishlist = async (req, res) => {
 
 exports.getAllWishlists = async (req, res) => {
   try {
-    const wishlists = await WishlistSchema.find().populate("userId");
+    const userId = req.query.userId;
+    if (!userId) {
+      return res.status(400).json({ error: "User ID is required" });
+    }
+    const wishlists = await WishlistSchema.find({ userId: userId });
     res.status(200).json(wishlists);
   } catch (err) {
     res.status(500).send(err);
