@@ -7,6 +7,7 @@ import SharedWishList from "./Components/SharedWishlist/SharedWishList";
 import Moments from "./Components/Moments/Moments";
 import Profile from "./Components/Profile/Profile";
 import Community from "./Components/Community/Community";
+import Post from "./Components/Post/Post";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
             element={<SharedWishList />}
           />
           <Route path="/fashionmoments" element={<Moments />} />
+          <Route path="/ootd" element={<Post/>} />
           <Route path="/profile/:id" element={<Profile />} />
           <Route path="/profile" element={<Profile />} />
           <Route

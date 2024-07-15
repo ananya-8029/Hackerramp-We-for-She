@@ -48,14 +48,22 @@ const ScrollerItem = ({ moment }) => {
     >
       <div className="w-full h-[25%] flex justify-center items-center flex-col">
         <div className="flex w-[80%] justify-center items-center py-3 flex-col">
-          <div className="flex justify-start items-end gap-4">
-            <div className="h-[3vmax] w-[3vmax] overflow-hidden rounded-full">
-              <img src={user ? user.profilePicture : ""} alt="" />
+          <div className="flex justify-between px-[1vmax] items-center w-[70%]">
+            <div className="flex justify-center items-center gap-4">
+              <div className="h-[3vmax] w-[3vmax] overflow-hidden rounded-full">
+                <img src={user ? user.profilePicture : ""} alt="" />
+              </div>
+              <p className="text-white font-font1 font-bold">
+                {user ? user.username : ""}
+              </p>
             </div>
-            <p className="text-white font-font1 font-bold">
-              {user ? user.username : ""}
-            </p>
+            <button
+              className="text-white cursor-pointer transition-all bg-transparent px-6 py-2 rounded-lg border-red-500 border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] hover:border-b-[6px]active:border-b-[2px] active:brightness-90 active:translate-y[2px] hover:shadow-xl hover:shadow-red-800 shadow-red-500/50 active:shadow-none"
+            >
+              Follow
+            </button>
           </div>
+
           <p className="font-font1 font-bold text-white">{moment.caption}</p>
         </div>
 
