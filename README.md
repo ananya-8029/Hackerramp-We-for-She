@@ -1,11 +1,13 @@
 ![image](https://github.com/user-attachments/assets/cae78002-700e-4970-9e4b-69a5773b1df6)ABOUT
 Social media is an influencing force shaping fashion and has kickstarted a drastic evolution in fast fashion. There are various Social Media platforms where fashion influencers reach thousands, even millions of people who want to stay relevant, post-able, and just as cool from when they wake up to when they go to bed. The impact of social media has revolutionized our lives and its rapid rise has changed the game of the Fashion Industry. Moreover, investing in a user-friendly interface will help in technology advancements. It’s easier to grab the attention of the target audience when they’re scrolling than through other digital ads. This is precisely where social shopping steps in. The seamless integration of trending e-commerce apps and social media makes reaching customers faster.
 
-FEATURES:-
-•	->Adding social media Reels functionality
-•	->Shareable Wishlist
-•	->Outfit of the Day (OOTD) and Get Ready With Me (GRWM)
-•	->Community Building
+### Features:
+
+- Adding social media Reels functionality
+- Shareable Wishlist
+- Outfit of the Day (OOTD) and Get Ready With Me (GRWM)
+- Community Building
+  
 ![Brown Pastel Flowchart Diagram Graph Template](https://github.com/user-attachments/assets/1e605827-ddf4-4b1b-be1d-d20483bb6c1b)
 ![Brown Pastel Flowchart Diagram Graph Template (3)](https://github.com/user-attachments/assets/b2130314-4ec5-4a70-8cb9-8568316a14bb)
 ![image](https://github.com/user-attachments/assets/24530d45-bfe9-4553-91c7-1d6cfc674c64)
