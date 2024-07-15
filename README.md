@@ -1,4 +1,4 @@
-//ABOUT//
+ABOUT
 Social media is an influencing force shaping fashion and has kickstarted a drastic evolution in fast fashion. There are various Social Media platforms where fashion influencers reach thousands, even millions of people who want to stay relevant, post-able, and just as cool from when they wake up to when they go to bed. The impact of social media has revolutionized our lives and its rapid rise has changed the game of the Fashion Industry. Moreover, investing in a user-friendly interface will help in technology advancements. It’s easier to grab the attention of the target audience when they’re scrolling than through other digital ads. This is precisely where social shopping steps in. The seamless integration of trending e-commerce apps and social media makes reaching customers faster.
 
 FEATURES:-
