@@ -64,6 +64,10 @@ Social media is an influencing force shaping fashion and has kickstarted a drast
 ![image](https://github.com/user-attachments/assets/abab4f42-4b9f-4863-bed9-f875747f8245)
 
 ### This marks the end of our implementation of integration of Social Media Functionality and enhancing User Engagement
+PPT LINK-https://docs.google.com/presentation/d/1-UOTHOY0nLYSyoGkuj79_KmXkk1BlUQD/edit?usp=sharing&ouid=118210364005508851399&rtpof=true&sd=true
+DEMO VIDEOS LINK-
+VIDEO1-https://drive.google.com/file/d/1m6iW2D4xagNQq86pCWBBG4jdyqTsuSfY/view?usp=sharing
+VIDEO2-https://drive.google.com/file/d/1SvpJPVAR56uOI-qeUDjH1xyAvM-m96gX/view?usp=sharing
 
 <h2 align="center"><b>Developed by Team &lt&#47TECHCODER&gt</b></h2><br>
 
