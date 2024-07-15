@@ -1,4 +1,4 @@
-ABOUT
+![image](https://github.com/user-attachments/assets/cae78002-700e-4970-9e4b-69a5773b1df6)ABOUT
 Social media is an influencing force shaping fashion and has kickstarted a drastic evolution in fast fashion. There are various Social Media platforms where fashion influencers reach thousands, even millions of people who want to stay relevant, post-able, and just as cool from when they wake up to when they go to bed. The impact of social media has revolutionized our lives and its rapid rise has changed the game of the Fashion Industry. Moreover, investing in a user-friendly interface will help in technology advancements. It’s easier to grab the attention of the target audience when they’re scrolling than through other digital ads. This is precisely where social shopping steps in. The seamless integration of trending e-commerce apps and social media makes reaching customers faster.
 
 FEATURES:-
@@ -15,6 +15,17 @@ FEATURES:-
 ![image](https://github.com/user-attachments/assets/832071c2-4ad9-4652-86e7-c690d235a647)
 ![image](https://github.com/user-attachments/assets/76dc1584-10b0-4a2d-8f19-91a93f6a2936)
 ![image](https://github.com/user-attachments/assets/cdd8db14-0337-486a-8dc2-199a0aa2c933)
+![image](https://github.com/user-attachments/assets/abab4f42-4b9f-4863-bed9-f875747f8245)
+DEVELOPED BY:
+ TECHCODERS
+•	GUNGUN (LEADER)
+LINKEDIN PROFILE-https://www.linkedin.com/in/gungun-gungun-b8274a22b/
+
+•	ANANYA GUPTA
+LINKEDIN PROFILE-https://www.linkedin.com/in/ananya-gupta-0706b122b/
+
+•	DEVANSHI MATHUR
+LINKEDIN PROFILE-https://www.linkedin.com/in/devanshi-mathur-9546b624a/
 
 
 
